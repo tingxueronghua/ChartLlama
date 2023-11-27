@@ -6,7 +6,7 @@
   <meta name="description" content="ChartLlama: A Multimodal LLM for Chart Understanding and Generation">
   <meta name="keywords" content="ChartLlama">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ChartLlama: A Multimodal LLM for Chart Understanding and Generation</title>
+  <title> ChartLlama: A Multimodal LLM for Chart Understanding and Generation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/chartllama.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -38,6 +38,11 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
+<!-- 
+[**Yucheng Han**$^{\ast}$](http://tingxueronghua.github.io), [**Chi Zhang**$^{\ast\dag}$](https://icoz69.github.io/), [Xin Chen](https://chenxin.tech/), [Xu Yang](https://cse.seu.edu.cn/2021/1126/c23024a392593/page.htm), [Zhibin Wang](https://openreview.net/profile?id=~Billzb_Wang1)
+<br>
+[Gang Yu](https://www.skicyyu.org/), [Bin Fu](https://openreview.net/profile?id=~BIN_FU2), [Hanwang Zhang](https://personal.ntu.edu.sg/hanwangzhang/) -->
 
 <body>
   <!-- Yucheng Han, Chi Zhang, Xin Chen, Xu Yang, Billzb Wang, Gang Yu, BIN FU, Hanwang Zhang  -->
@@ -50,26 +55,27 @@
             </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                Yucheng Han*<sup>1</sup>,</span>
+                <a href="http://tingxueronghua.github.io">Yucheng Han*</a><sup>1</sup>,</span>
               <span class="author-block">
-                Chi Zhang*<sup>2</sup>,</span>
+                <a href="https://icoz69.github.io/">Chi Zhang*&#10022</a><sup>2</sup>,</span>
               <span class="author-block">
-                Xin Chen<sup>2</sup>,
+                <a href="https://chenxin.tech/">Xin Chen</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                Xu Yang<sup>3</sup>,
+                <a href="https://cse.seu.edu.cn/2021/1126/c23024a392593/page.htm">Xu Yang</a><sup>3</sup>,
               </span>
               <span class="author-block">
-                Billzb Wang<sup>2</sup>,
+                <a href="https://openreview.net/profile?id=~Billzb_Wang1">Zhibin Wang</a><sup>2</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                <a href="https://www.skicyyu.org/">Gang Yu</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                Gang Yu<sup>2</sup>
+                <a href="https://openreview.net/profile?id=~BIN_FU2">BIN FU</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                BIN FU<sup>2</sup>
-              </span>
-              <span class="author-block">
-                Hanwang Zhang<sup>1</sup>
+                <a href="https://personal.ntu.edu.sg/hanwangzhang/">Hanwang Zhang</a><sup>1</sup>
               </span>
             </div>
 
@@ -77,6 +83,9 @@
               <span class="author-block"><sup>1</sup>Nanyang Technological University</span>
               <span class="author-block"><sup>2</sup>Tencent</span>
               <span class="author-block"><sup>3</sup>Southeast University</span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup></sup>(* Equal contributions, &#10022 Corresponding Author)</span>
             </div>
 
             <div class="column has-text-centered">
@@ -128,6 +137,31 @@
     </div>
   </section>
 
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Teaser. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <div class="content has-text-justified">
+            <div class="center-image">
+              <figure>
+                <img src="./static/teaser_visualization_final_v3.png" class="interpolation-image"
+                  alt="Interpolate start reference image." />
+                <figcaption>
+                  <strong>Capability demonstration of ChartLlama.</strong> An instruction-tuning dataset is created
+                  based on our proposed data generation
+                  pipeline. We train ChartLlama on this dataset and achieve the abilities shown in the figure.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
@@ -158,8 +192,6 @@
       <!--/ Abstract. -->
     </div>
   </section>
-
-
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Teaser. -->
@@ -168,12 +200,9 @@
           <div class="content has-text-justified">
             <div class="center-image">
               <figure>
-                <img src="./static/teaser_visualization_final_v3.png" class="interpolation-image"
-                  alt="Interpolate start reference image." />
+                <img src="./static/traditional_task.png" class="interpolation-image" alt="Interpolate start reference image." />
                 <figcaption>
-                  <strong>Capability demonstration of ChartLlama.</strong> An instruction-tuning dataset is created
-                  based on our proposed data generation
-                  pipeline. We train ChartLlama on this dataset and achieve the abilities shown in the figure.
+                  <strong>We achieve SOTA on traditional tasks.</strong> 
                 </figcaption>
               </figure>
             </div>
@@ -182,7 +211,6 @@
       </div>
     </div>
   </section>
-
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Teaser. -->
@@ -191,14 +219,9 @@
           <div class="content has-text-justified">
             <div class="center-image">
               <figure>
-                <img src="./static/results.png" class="interpolation-image" alt="Interpolate start reference image." />
+                <img src="./static/new_task.png" class="interpolation-image" alt="Interpolate start reference image." />
                 <figcaption>
-                  <strong>We achieve SOTA on traditional tasks and new tasks.</strong> 
-                  <!-- For traditional tasks, we test the
-                  performances of different methods on ChartQA, Chart-to-text, and Chart extraction. For new tasks, we first propose Detailed description,
-                  which aims at describing details in the chart. Then we propose several chart generation tasks. For
-                  different input conditions, they are named as Chart-to-chart, Text-to-chart, and Chart-editing,
-                  respectively. We also measure the performance of Chart-to-text using GPT-4. -->
+                  <strong>We achieve SOTA on new tasks.</strong> 
                 </figcaption>
               </figure>
             </div>
@@ -329,17 +352,17 @@
     </div>
   </section>
 
-  <!-- <section class="section" id="BibTeX">
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{yuchenghan,
-  title={ChartLlama: A Multimodal LLM for Chart Understanding and Generation},
-  author={Han, Yucheng and Zhang, Chi and Chen, Xin and Yang, XU and Wang, Zhibin and Yu, Gang and Fu, Bin and Zhang, Hanwang},
-  journal={arXiv preprint arXiv},
-  year={2023}
-}</code></pre>
+      <pre><code>@misc{yucheng2023chartllama,
+        title={ChartLlama: A Multimodal LLM for Chart Understanding and Generation}, 
+        author={Yucheng Han, Chi Zhang, Xin Chen, Xu Yang, Zhibin Wang, Gang Yu, Bin Fu, Hanwang Zhang},
+        year={2023},
+        howpublished={\url{https://github.com/tingxueronghua/ChartLlama-code}}
+  }</code></pre>
     </div>
-  </section> -->
+  </section>
 
 
   <footer class="footer">
